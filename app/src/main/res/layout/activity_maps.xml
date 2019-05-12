@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#14DAC6"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/apply_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                >
+                <ImageView
+                    android:layout_marginTop="12.7dp"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/x_icon_blue"
+                    android:layout_marginLeft="16dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="위치추가"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="105.5dp"/>
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="24.5dp"
+                    android:layout_marginTop="7.6dp"
+                    android:layout_marginLeft="11dp"
+                    android:src="@drawable/place_icon"/>
+                <ImageView
+                    android:id="@+id/confirm_btn"
+                    android:layout_width="30.79dp"
+                    android:layout_height="22.4dp"
+                    android:src="@drawable/save_btn"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginLeft="93.74dp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/apply_toolBar"
+        android:background="@drawable/apply_border"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="17dp"
+            android:layout_width="328dp"
+            android:layout_height="34dp"
+            android:orientation="horizontal"
+            android:background="@drawable/comment_border"
+            android:layout_gravity="center">
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="7.1dp"
+                android:layout_marginLeft="7.5dp"
+                android:background="@drawable/search_icon_2" />
+            <EditText
+                android:paddingLeft="10dp"
+                android:imeOptions="actionDone"
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="위치 검색"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="13.68dp"
+            tools:context=".MapsActivity" />
+        />
+
+
+    </LinearLayout>
+</RelativeLayout>

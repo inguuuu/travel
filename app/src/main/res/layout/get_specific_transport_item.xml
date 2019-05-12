@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:background="#F5F5F5">
+
+    <View
+        android:id="@+id/transport_view"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#049DED"
+        android:layout_marginLeft="45dp"/>
+
+
+    <TextView
+        android:id="@+id/transport_beginTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="16:30"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/transport_view"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="13dp"/>
+    <TextView
+        android:id="@+id/transport_endTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="17:30"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/transport_view"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="13dp"/>
+
+
+    <ImageView
+        android:id="@+id/transport_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/car_icon_black"
+        android:layout_toRightOf="@+id/transport_beginTime"/>
+
+    <TextView
+        android:id="@+id/transport_explain"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:text="라마다 호텔역에서 1100번 버스를 타고 자금성역에서 내리세요"
+        android:layout_toRightOf="@+id/transport_icon"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/transport_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="200KRW"
+        android:textColor="#70B6C4"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="10dp"/>
+
+
+</RelativeLayout>

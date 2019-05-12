@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#14DAC6"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/apply_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/btn_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="15dp"
+                android:paddingStart="22dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="15dp"
+                android:src="@drawable/x_icon_blue"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/apply_border"
+        android:layout_below="@+id/apply_toolBar"
+        android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginStart="43dp"
+                    android:layout_marginEnd="43dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spinner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:id="@+id/write_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="7dp"
+                            android:textSize="15sp"
+                            android:hint="제목을 입력해주세요"
+                            android:maxLines="1"
+                            android:textColorHint="#14DAC6"
+                            android:background="@android:color/transparent" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#14DAC6"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="9dp"/>
+
+                    <TextView
+                        android:id="@+id/btnDateFragment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:hint="+날짜"
+                        android:textSize="12sp"
+                        android:textColorHint="#14DAC6"
+                        android:background="@drawable/date_btn"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="45dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="총 비용"
+                        android:textColor="#BABABA"
+                        android:layout_marginEnd="21dp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#BABABA"
+                        android:layout_marginEnd="35dp"/>
+
+                    <TextView
+                        android:id="@+id/total_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="1일"
+                        android:textColor="#049DED"
+                        android:layout_marginEnd="34dp"/>
+
+                    <TextView
+                        android:id="@+id/total_coin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="300코인"
+                        android:textColor="#00CAD8"
+                        android:layout_marginEnd="3dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/cost_icon_on"/>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/apply_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"/>
+
+                <ImageView
+                    android:id="@+id/plus_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/plus_btn"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="30dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="3dp"
+                            android:layout_height="18dp"
+                            android:background="#049DED"
+                            android:layout_marginStart="17dp"
+                            />
+                        <TextView
+
+                            android:layout_marginStart="12dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="특이사항"
+                            android:textSize="15sp"
+                            android:textColor="#049DED"
+                            android:layout_marginBottom="15dp" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/write_etc"
+                        android:layout_width="match_parent"
+                        android:layout_height="226dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop = "5dp"
+                        android:gravity="top"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginEnd="18dp"
+                        android:background="@drawable/nickname_background" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="23dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="30dp">
+
+                        <View
+                            android:layout_width="3dp"
+                            android:layout_height="18dp"
+                            android:background="#049DED"
+                            android:layout_marginStart="17dp"
+                            />
+                        <TextView
+                            android:layout_marginStart="12dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="가격"
+                            android:textSize="15sp"
+                            android:textColor="#707070" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="18dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="사용 가능 코인"
+                                android:textColor="#434242"
+                                android:textSize="13sp"
+                                android:layout_marginEnd="42dp"/>
+                            <TextView
+                                android:id="@+id/have_coin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="500코인"
+                                android:textColor="#434242"
+                                android:textSize="14sp"/>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/cost_icon_off"
+                                android:layout_marginStart="3dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="13dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="결제 코인"
+                                android:textColor="#434242"
+                                android:textSize="13sp"
+                                android:layout_marginEnd="69dp"/>
+                            <TextView
+                                android:id="@+id/pay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="300코인"
+                                android:textColor="#00CAD8"
+                                android:textSize="14sp"/>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/cost_icon_on"
+                                android:layout_marginStart="3dp"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#BABABA"
+                            android:layout_marginBottom="15dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="잔여 코인"
+                                android:textColor="#434242"
+                                android:textSize="13sp"
+                                android:layout_marginEnd="69dp"/>
+                            <TextView
+                                android:id="@+id/residue_coin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="200코인"
+                                android:textColor="#434242"
+                                android:textSize="14sp"/>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/cost_icon_off"
+                                android:layout_marginStart="3dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/btn_ok"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="7dp"
+                        android:paddingBottom="7dp"
+                        android:layout_marginEnd="94dp"
+                        android:layout_marginStart="94dp"
+                        android:background="@drawable/ok_btn"
+                        android:text="확인 및 결제"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginBottom="20dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

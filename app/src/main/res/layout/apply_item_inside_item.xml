@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="14dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp">
+
+        <View
+            android:id="@+id/appy_bar1"
+            android:layout_width="3dp"
+            android:layout_height="18dp"
+            android:background="#049DED"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="IN"
+            android:textSize="14sp"
+            android:textColor="#049DED"/>
+
+        <TextView
+            android:id="@+id/apply_in_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="94dp"
+            android:text="나라, 도시, 장소"
+            android:textColor="#707070"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/apply_in_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="94dp"
+            android:layout_below="@id/apply_in_title"
+            android:layout_marginTop="11dp"
+            android:text="day"
+            android:textColor="#707070"
+            android:textSize="13sp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="38dp">
+
+        <View
+            android:id="@+id/appy_bar2"
+            android:layout_width="3dp"
+            android:layout_height="18dp"
+            android:background="#049DED"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="숙소"
+            android:textSize="14sp"
+            android:textColor="#049DED"/>
+
+        <TextView
+            android:id="@+id/apply_hotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="94dp"
+            android:text="상세주소"
+            android:textColor="#707070"
+            android:textSize="13sp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="38dp">
+
+        <View
+            android:id="@+id/appy_bar3"
+            android:layout_width="3dp"
+            android:layout_height="18dp"
+            android:background="#049DED"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="OUT"
+            android:textSize="14sp"
+            android:textColor="#049DED"/>
+
+        <TextView
+            android:id="@+id/apply_out_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="94dp"
+            android:text="나라, 도시, 장소"
+            android:textColor="#707070"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/apply_out_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="94dp"
+            android:layout_below="@id/apply_out_title"
+            android:layout_marginTop="11dp"
+            android:text="day"
+            android:textColor="#707070"
+            android:textSize="13sp"/>
+
+    </RelativeLayout>
+</LinearLayout>

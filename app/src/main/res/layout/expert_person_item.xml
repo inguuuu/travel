@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="27dp"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/expert_profile"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:src ="@drawable/expert_img_1"/>
+        <ImageView
+            android:id="@+id/expert_crown"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginBottom="2dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/blue_crown_small"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginStart="21dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/expert_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="아이디(이름)"
+            android:textColor="#707070"
+            android:textSize="11sp"/>
+
+        <TextView
+            android:id="@+id/expert_tendency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="성향"
+            android:textColor="#11D1BE"
+            android:textSize="11sp"/>
+
+        <TextView
+            android:id="@+id/expert_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="전문지역"
+            android:textColor="#707070"
+            android:textSize="11sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2dp"
+                android:text="평점"
+                android:textColor="#707070"
+                android:textSize="11sp"/>
+
+            <RatingBar
+                android:id="@+id/expert_ratingBar"
+                style="@style/RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2dp"
+                android:isIndicator="true"
+                android:max="5"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="0.1" />
+
+            <TextView
+                android:id="@+id/expert_ratingValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(0.0)"
+                android:textColor="#707070"
+                android:textSize="8sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

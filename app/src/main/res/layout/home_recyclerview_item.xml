@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/home_rc_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="2dp"
+            android:layout_height="18dp"
+            android:layout_marginEnd="6dp"
+            android:background="#049DED"/>
+        <TextView
+            android:id="@+id/home_rc_countryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나라이름"
+            android:textSize="15sp"
+            android:textColor="#049DED"/>
+
+    </LinearLayout>
+
+    <com.teamandroid.travelmaker.etc.InfiniteViewPager
+        android:id="@+id/home_rc_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="22dp"
+        android:clipToPadding="false"
+        android:layout_below="@+id/home_rc_title" />
+
+    <View
+        android:id="@+id/home_rc_footer"
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:layout_marginTop="214dp"
+        android:background="#F5F5F5" />
+</RelativeLayout>

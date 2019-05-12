@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PlanMainActivity">
+
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/main_toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbar_background_normal"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/btn_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="15dp"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="22dp"
+                    android:paddingTop="15dp"
+                    android:src="@drawable/x_icon_blue" />
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/travel_maker_home" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/main_toolBar"
+        android:background="#20DAC7"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+
+            <Button
+                android:id="@+id/send_btn"
+                android:layout_width="40dp"
+                android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/rounded_send_btn"
+                android:text="보내기"
+                android:textColor="#049DED"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="17dp"
+            android:background="#14dac6">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/plan_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="[베이징] 중국 신청해요!"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="273dp"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginTop="7dp"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:id="@+id/btnDateFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="23dp"
+                    android:layout_gravity="center"
+                    android:text="2018.07.02~2018.07.06"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/btn_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:clickable="true"
+                android:text="더보기"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="37dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/map_btn"
+                android:layout_width="86dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="-11dp"
+                android:layout_toRightOf="@+id/schedule_btn"
+                android:background="@drawable/btn_map"
+                android:gravity="center"
+                android:text="지도보기"
+                android:textColor="#707070"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/schedule_btn"
+                android:layout_width="86dp"
+                android:layout_height="24dp"
+                android:background="@drawable/btn_schedule"
+                android:gravity="center"
+                android:text="일정보기"
+                android:textColor="#049DED"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/tab_fl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/fl_background"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

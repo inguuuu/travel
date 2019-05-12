@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#BFf5f5f5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="3dp"
+            android:layout_height="18dp"
+            android:background="#049DED"
+            android:layout_marginStart="17dp" />
+
+        <TextView
+            android:layout_marginStart="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IN"
+            android:textSize="15sp"
+            android:textColor="#389eed" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="30dp">
+
+            <EditText
+                android:id="@+id/in_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="31dp"
+                android:hint="나라,도시,장소"
+                android:textColor="#BABABA"
+                android:textSize="12sp"
+                android:background="@drawable/nickname_background"
+                android:paddingStart="15dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/in_date"
+                android:layout_marginTop="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="날짜/시간 선택"
+                android:textColor="#BABABA"
+                android:textSize="12sp"
+                android:background="@drawable/nickname_background"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingEnd="26dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="41dp">
+        <View
+            android:layout_width="3dp"
+            android:layout_height="18dp"
+            android:background="#049DED"
+            android:layout_marginStart="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:text="숙소"
+            android:textSize="15sp"
+            android:textColor="#049DED"
+            />
+
+            <EditText
+                android:id="@+id/acc_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="16dp"
+                android:hint="숙소 주소 입력"
+                android:textSize="12sp"
+                android:textColor="#BABABA"
+                android:background="@drawable/nickname_background"
+                android:paddingStart="15dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="3dp"
+            android:layout_height="18dp"
+            android:background="#049DED"
+            android:layout_marginStart="17dp" />
+
+        <TextView
+            android:layout_marginStart="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OUT"
+            android:textSize="15sp"
+            android:textColor="#049DED"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="20dp">
+
+            <EditText
+                android:id="@+id/out_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:hint="나라,도시,장소"
+                android:textSize="12sp"
+                android:background="@drawable/nickname_background"
+                android:paddingStart="15dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"/>
+
+
+            <TextView
+                android:id="@+id/out_date"
+                android:layout_marginTop="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="날짜/시간 선택"
+                android:textColor="#BABABA"
+                android:textSize="12sp"
+                android:background="@drawable/nickname_background"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingEnd="27dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

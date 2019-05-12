@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <TextView
+            android:id="@+id/apply_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="제목"
+            android:textSize="15sp"
+            android:textColor="#14DAC6"
+            android:layout_gravity="center_horizontal"/>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="26dp">
+
+            <ImageView
+                android:id="@+id/apply_userImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:src="@drawable/profile_img_small"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/apply_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:text="닉네임(아이디)"
+                android:textColor="#8C8C8C"
+                android:textSize="13sp"
+                app:layout_constraintStart_toEndOf="@+id/apply_userImage"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/apply_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:text="작성일 : 날짜, 시간"
+                android:textColor="#BABABA"
+                android:textSize="11sp"
+                app:layout_constraintStart_toEndOf="@+id/apply_userImage"
+                app:layout_constraintTop_toBottomOf="@+id/apply_id" />
+
+            <TextView
+                android:id="@+id/apply_view_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="18dp"
+                android:layout_marginTop="16dp"
+                android:text="조회:1"
+                android:textColor="#BABABA"
+                android:textSize="11sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/apply_id" />
+
+            <View
+                android:id="@+id/apply_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="25dp"
+                android:background="#BABABA"
+                app:layout_constraintTop_toBottomOf="@+id/apply_userImage" />
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/apply_during"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:text="during"
+            android:textSize="13sp"
+            android:textColor="#c8c8c8"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/apply_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X일 ="
+                android:textSize="13sp"
+                android:textColor="#c8c8c8"/>
+
+            <TextView
+                android:id="@+id/apply_coin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="X 코인"
+                android:textSize="13sp"
+                android:textColor="#00CAD8"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#F5F5F5">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/apply_item_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="38dp">
+
+                <View
+                    android:id="@+id/appy_bar4"
+                    android:layout_width="3dp"
+                    android:layout_height="18dp"
+                    android:background="#049DED"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="특이사항"
+                    android:textSize="14sp"
+                    android:textColor="#049DED"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/apply_etc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="43dp"
+                android:layout_marginBottom="43dp"
+                android:layout_marginEnd="43dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
